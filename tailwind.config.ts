@@ -12,6 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: "var(--font-poppins)",
+      },
+      screens: {
+        xs: "320px", // Custom breakpoint for small mobile screens
+        sm: "640px", // Tablets and medium-sized screens
+        md: "1024px", // Laptops and larger screens
+        lg: "1280px", // Desktops
+      },
     },
   },
   plugins: [],

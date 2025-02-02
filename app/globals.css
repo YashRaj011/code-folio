@@ -2,20 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  @apply bg-[#1a1a1a];
+}
+
+/* .flip-container {
+  perspective: 1000px;
+} */
+
+.flipper {
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.flipped .flipper {
+  transform: rotateX(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+.back {
+  transform: rotateX(180deg);
 }
