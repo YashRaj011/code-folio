@@ -60,7 +60,7 @@ export default function Home() {
                 id="text-line-2"
                 className="text-3xl sm:text-5xl md:text-6xl w-full mt-6 font-light"
               >
-                I'm Yash Raj Varma
+                I&apos;m Yash Raj Varma
               </p>
               <div
                 id="flippable-text-container"
